@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="Center">
+    <form>
+        <ul>
+            <li>Title: @Model.Data?.Details?.title</li>
+            <li>Title: @Model.Data?.Details?.author</li>
+            <li>Title: @Model.Data?.Details?.url</li>
+            <li>Title: @Model.Data?.Details?.decription</li>
+        </ul>
+        <h1>@Model.Data?.Main?.Image</h1>
+        <p>@Model.Data?.Main?.Content</p>
+    </form>
+
+</div>
+
+<div>
+    <h1 class="display-4">Welcome</h1>
+    <p>save your data <a href="/Form">here</a>.</p>
+</div>
